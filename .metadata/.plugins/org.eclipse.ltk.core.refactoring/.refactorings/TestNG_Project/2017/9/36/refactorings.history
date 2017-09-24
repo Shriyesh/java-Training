@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Framework.java&apos; to &apos;TestNG_Project/TestNG/datadriven&apos;&#x0D;&#x0A;- Original project: &apos;TestNG_Project&apos;&#x0D;&#x0A;- Destination element: &apos;TestNG_Project/TestNG/datadriven&apos;&#x0D;&#x0A;- Original element: &apos;framework.Framework.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/TestNG&lt;datadriven" element1="/TestNG&lt;framework{Framework.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1504610247932" units="1" version="1.0"/>
+</session>

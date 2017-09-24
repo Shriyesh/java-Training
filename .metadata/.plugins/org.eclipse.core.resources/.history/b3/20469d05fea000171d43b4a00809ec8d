@@ -1,0 +1,11 @@
+package hacker_rank;
+
+public class NegativePaymentException extends Exception {
+
+	public NegativePaymentException()
+	{
+		System.out.println("Plesae enter positive payment");
+		
+	}
+
+}
