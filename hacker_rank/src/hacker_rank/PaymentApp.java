@@ -20,7 +20,7 @@ catch (NegativePaymentException e) {
 	// TODO: handle exception
 	System.out.println(e.toString());
 	System.out.println("Code changes");
-	System.out.println("Code changes in github");
+	System.out.println("Code changes in github1");
 }
 	}
 
