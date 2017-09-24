@@ -19,7 +19,6 @@ try{
 catch (NegativePaymentException e) {
 	// TODO: handle exception
 	System.out.println(e.toString());
-	System.out.println("Code changes");
 }
 	}
 

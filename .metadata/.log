@@ -6797,3 +6797,67 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-09-24 13:35:37.221
 !MESSAGE No repository found at http://beust.com/eclipse..
+
+!ENTRY org.python.pydev.shared_core 4 4 2017-09-24 21:55:35.824
+!MESSAGE Error. returning: 0
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Users\Shriyesh\Anaconda3\DLLs\pyexpat.pyd
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(Unknown Source)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(Unknown Source)
+	at java.nio.file.Files.readAttributes(Unknown Source)
+	at java.nio.file.Files.getLastModifiedTime(Unknown Source)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1059)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1050)
+	at org.python.pydev.shared_core.io.FileUtils.getLastModifiedTimeFromDir(FileUtils.java:888)
+	at org.python.pydev.shared_core.path_watch.EventsStackerRunnable.run(EventsStackerRunnable.java:218)
+	at org.python.pydev.shared_core.path_watch.PathWatch$PollThread.run(PathWatch.java:203)
+
+!ENTRY org.python.pydev.shared_core 4 4 2017-09-24 21:56:19.580
+!MESSAGE No output was in the standard output when
+trying to create the interpreter info for: C:\Users\Shriyesh\Anaconda3\python.exe
+The error output contains:>>Fatal Python error: Py_Initialize: unable to load the file system codec
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x000004d4 (most recent call first):
+<<
+!STACK 0
+java.lang.RuntimeException: No output was in the standard output when
+trying to create the interpreter info for: C:\Users\Shriyesh\Anaconda3\python.exe
+The error output contains:>>Fatal Python error: Py_Initialize: unable to load the file system codec
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x000004d4 (most recent call first):
+<<
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.createInfoFromOutput(AbstractInterpreterManager.java:440)
+	at org.python.pydev.ui.interpreters.PythonInterpreterManager.doCreateInterpreterInfo(PythonInterpreterManager.java:71)
+	at org.python.pydev.ui.interpreters.PythonInterpreterManager.internalCreateInterpreterInfo(PythonInterpreterManager.java:44)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.createInterpreterInfo(AbstractInterpreterManager.java:390)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager$CreateInterpreterInfoCallback.createInterpreterInfo(SynchSystemModulesManager.java:173)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager.updateStructures(SynchSystemModulesManager.java:252)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.python.pydev.shared_core 4 4 2017-09-24 21:58:05.134
+!MESSAGE Error. returning: 0
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Users\Shriyesh\Anaconda3\lib\site-packages\Crypto\Cipher\AES.py
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(Unknown Source)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(Unknown Source)
+	at java.nio.file.Files.readAttributes(Unknown Source)
+	at java.nio.file.Files.getLastModifiedTime(Unknown Source)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1059)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1050)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:184)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:160)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:86)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SynchSystemModulesManager.java:390)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:261)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
